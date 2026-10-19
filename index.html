@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afia Ambreen | Profile</title>
+<meta name="description" content="Profile of Afia Ambreen, BS English student at NUML Islamabad">
+<style>
+:root{
+  --bg:#f6f7f4; --surface:#ffffff; --text:#1c2321; --muted:#5b6661;
+  --accent:#1f6f5c; --accent-text:#ffffff; --line:#dde2dd;
+}
+:root[data-theme="dark"]{
+  --bg:#101614; --surface:#18211e; --text:#e8eeeb; --muted:#9aa7a1;
+  --accent:#5fd0b0; --accent-text:#0b1512; --line:#27332f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,"Times New Roman",serif;background:var(--bg);color:var(--text);line-height:1.65;transition:background .25s,color .25s}
+h1,h2,h3,nav,button,.tag,.btn{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+nav a{margin-right:18px;text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a:hover{color:var(--text)}
+#theme{background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer;font-size:.9rem}
+
+.hero{padding:64px 0 40px;display:flex;gap:32px;align-items:center;flex-wrap:wrap}
+.photo{width:160px;height:160px;border-radius:50%;background:var(--surface);border:2px dashed var(--line);display:grid;place-items:center;color:var(--muted);font-family:system-ui,sans-serif;font-size:.85rem;text-align:center;flex-shrink:0;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.hero h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.1;letter-spacing:-.02em}
+.role{color:var(--accent);font-family:system-ui,sans-serif;font-weight:600;margin:6px 0 12px}
+.hero p{max-width:52ch;color:var(--muted)}
+.btns{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 20px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem}
+.btn.primary{background:var(--accent);color:var(--accent-text)}
+.btn.ghost{border:1px solid var(--line);color:var(--text)}
+
+section{padding:40px 0;border-top:1px solid var(--line)}
+section h2{font-size:1.5rem;margin-bottom:18px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
+.tag{background:var(--surface);border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-size:.9rem}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px}
+.card h3{font-size:1.05rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.95rem}
+.card a{font-family:system-ui,sans-serif;font-size:.9rem;display:inline-block;margin-top:10px}
+
+.edu{border-left:3px solid var(--accent);padding-left:16px;margin-bottom:18px}
+.edu h3{font-size:1.05rem}
+.edu span{color:var(--muted);font-family:system-ui,sans-serif;font-size:.9rem}
+
+.contact ul{list-style:none;display:grid;gap:8px}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-family:system-ui,sans-serif;font-size:.85rem;border-top:1px solid var(--line)}
+@media (max-width:560px){nav{display:none}.hero{padding-top:40px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+    <button id="theme" aria-label="Toggle dark and light mode">Dark mode</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero" id="about">
+    <div class="photo">
+      <!-- Replace this text with: <img src="photo.jpg" alt="Afia Ambreen"> -->
+      Photo placeholder
+    </div>
+    <div>
+      <h1>Afia Ambreen</h1>
+      <p class="role">BS English Student | Intern</p>
+      <p>I am a BS English student at NUML University, Islamabad, with strong communication, writing, and research skills. I enjoy analyzing and presenting information clearly, and I am learning HTML and Python alongside my degree.</p>
+      <div class="btns">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn ghost" href="#projects">See my projects</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="tags">
+      <li class="tag">Communication</li><li class="tag">Persuasion</li><li class="tag">Writing and research</li>
+      <li class="tag">Critical thinking</li><li class="tag">Teamwork</li><li class="tag">Time management</li>
+      <li class="tag">Adaptability</li><li class="tag">HTML (basic)</li><li class="tag">Python (basic)</li>
+    </ul>
+    <p style="margin-top:14px;color:var(--muted)">Languages: English, Urdu</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article class="card"><h3>ATM simulator</h3><p>A Python program with PIN check, withdrawal, deposit, transfer, and balance inquiry.</p></article>
+      <article class="card"><h3>Login system</h3><p>A Python login simulation with email check and three password attempts.</p></article>
+      <article class="card"><h3>Rock, paper, scissors</h3><p>A Python game where you play against a random computer choice.</p></article>
+      <article class="card"><h3>Calculator</h3><p>A Python calculator for addition, subtraction, multiplication, and division.</p></article>
+      <article class="card"><h3>NDS Publications page</h3><p>A basic HTML page with headings, lists, an image, and links.</p></article>
+      <article class="card"><h3>This profile page</h3><p>A single-file responsive page built with an AI assistant and deployed from GitHub.</p><a href="https://github.com/Afia-ambreen0001">View on GitHub</a></article>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu">
+      <h3>BS English</h3>
+      <span>NUML University, Islamabad | 2024 to present | CGPA 3.6</span>
+    </div>
+    <div class="edu">
+      <h3>F.Sc. (Pre-medical)</h3>
+      <span>Punjab Group of Colleges | 2021 to 2023 | 85%</span>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="edu">
+      <h3>Intern, CELTS, AIOU</h3>
+      <span>Research and language-related practical exposure</span>
+    </div>
+    <div class="edu">
+      <h3>Member and certificate holder, NDS Society</h3>
+      <span>Took part in society activities and events, building communication, teamwork, and organizational skills. Received a certificate for participation and contribution.</span>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: <a href="mailto:iznrworld295@gmail.com">iznrworld295@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/Afia-ambreen0001">github.com/Afia-ambreen0001</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/afia-ambreen-926a94409">linkedin.com/in/afia-ambreen-926a94409</a></li>
+      <li>Location: Islamabad, Pakistan</li>
+    </ul>
+  </section>
+</main>
+
+<footer>&copy; <span id="year"></span> Afia Ambreen</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('theme');
+  var saved=null;
+  try{saved=localStorage.getItem('theme');}catch(e){}
+  var theme=saved||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+  function apply(t){
+    root.setAttribute('data-theme',t);
+    btn.textContent=t==='dark'?'Light mode':'Dark mode';
+  }
+  apply(theme);
+  btn.addEventListener('click',function(){
+    theme=root.getAttribute('data-theme')==='dark'?'light':'dark';
+    apply(theme);
+    try{localStorage.setItem('theme',theme);}catch(e){}
+  });
+  document.getElementById('year').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
